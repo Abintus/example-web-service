@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Database</title>
+    <script src = "script.js">
+    </script>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <h1>My favorite movies to watch</h1>
+        </div>
+    </header>
+    <main>
+        <div class = "container">
+            <div class = "row">
+                <div class = "column">
+                    <h2>Titles</h2>
+                    <ul id = "moviesList">
+                        <li><input type = "checkbox"> The Matrix, 1999, Keanu Reeves, Laurence Fishburne </li>
+                        <li><input type = "checkbox"> Indiana Jones, 1989, Harrison Ford, Sean Connery</li>
+                        <li><input type = "checkbox"> Casino Royal, 2006, Daniel Craig, Eva Green</li>
+                    
+                    </ul>
+                    
+                    <button onclick = "deleteMovies()"><i class="fa-solid fa-trash"></i> Delete Selected</button>
+                </div>
+
+                <div class = "column">
+                    <h3>Add movie</h3>
+                    Title: <input id = "movieTitle" type = "text"><br>
+                    Year: <input id = "movieYear" type = "text"><br>
+                    Actors: <input id = "movieActors" type = "text"><br>
+                    <button onclick = "addMovie()"><i class="fa-solid fa-file-circle-plus"></i> Add</button>
+                </div>
+            </div>   
+        </div>
+    </main>
+    <footer>
+        <div class = "container">
+            <hr>
+
+        </div>
+    </footer>
+</body>
+</html>
